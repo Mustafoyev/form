@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<main class="site-main">
+			<section class="formes pt-5 pb-5">
+				<div class="container">
+					<h1 class="formes__title text-center mb-4">Movies catalog</h1>
+					<div class="formes__content row">
+						<div class="col-4 pe-4">
+							<form
+								action="https://echo.htmlacademy.ru/
+              "
+								method="post"
+							>
+								<div class="mb-1">
+									<label for="formGroupExampleInput" class="form-label"></label>
+									<input
+										type="text"
+										name="user__ave"
+										class="form-control"
+										id="formGroupExampleInput"
+										placeholder="ave"
+									/>
+								</div>
+								<div class="mb-1">
+									<label
+										for="formGroupExampleInput2"
+										class="form-label"
+									></label>
+									<input
+										type="number"
+										name="user__number"
+										class="form-control"
+										id="formGroupExampleInput2"
+										placeholder="5"
+									/>
+								</div>
+
+								<label for="exampleDataList" class="form-label"></label>
+								<input
+									class="form-control"
+									list="datalistOptions"
+									id="exampleDataList"
+									name="user__datalist"
+									placeholder="All"
+								/>
+								<datalist id="datalistOptions">
+									<option value="Iron Man 1"></option>
+									<option value="Iron Man 2"></option>
+									<option value="Iron Man 3"></option>
+									<option value="Iron Man 4"></option>
+									<option value="Avengers 1"></option>
+									<option value="Avengers 2"></option>
+									<option value="Avengers 3"></option>
+									<option value="Avengers 4"></option>
+								</datalist>
+
+								<select
+									class="form-select mt-4"
+									aria-label="Default select example"
+									name="user__select"
+								>
+									<option selected>Rating (high to low)</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+
+								<button type="submit" class="btn btn-primary mt-4 w-100">
+									Search
+								</button>
+							</form>
+
+							<h2 class="mt-4 mb-2">Bookmarket movies</h2>
+
+							<ul class="list-group">
+								<li class="list-group-item fw-bold">
+									Avengers: Infinity War
+									<button type="button" class="btn btn-danger d-block mt-2">
+										Remove
+									</button>
+								</li>
+								<li class="list-group-item fw-bold">
+									The Avengers
+									<button type="button" class="btn btn-danger d-block mt-2">
+										Remove
+									</button>
+								</li>
+								<li class="list-group-item fw-bold">
+									12 Years a Slave
+									<button type="button" class="btn btn-danger d-block mt-2">
+										Remove
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="col-8 ps-4">
+							<h3 class="mt-3">Search results: 39</h3>
+							<div class="alert alert-success" role="alert">
+								Use the form on the left to search for a movie
+							</div>
+
+							<div class="row">
+								<div class="col-6">
+									<div class="card mt-2">
+										<div class="card__image">
+											<div
+												id="carouselExampleSlidesOnly"
+												class="carousel slide roun"
+												data-bs-ride="carousel"
+											>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./images/avengers1.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./images/avengers2.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./images/avengers3.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+												</div>
+											</div>
+											<div class="card__body p-3">
+												<h4 class="mb-3">Avengers: Infinity War</h4>
+												<span class="d-flex align-items-center mb-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="currentColor"
+														class="bi bi-calendar-fill me-3"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"
+														/>
+													</svg>
+
+													2018
+												</span>
+
+												<span class="d-flex align-items-center">
+													<img
+														class="star me-3"
+														src="./images/star.png"
+														alt="star"
+														width="18"
+														height="18"
+													/>
+													8.7
+												</span>
+
+												<div
+													class="buttons mt-3 mb-2 d-flex align-items-center justify-content-evenly"
+												>
+													<button type="button" class="btn btn-outline-primary">
+														Watch trailer
+													</button>
+													<button
+														type="button"
+														class="btn btn-outline-info"
+														data-bs-toggle="modal"
+														data-bs-target="#exampleModal"
+													>
+														More info
+													</button>
+													<button type="button" class="btn btn-outline-success">
+														Bookmark
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="card mt-2">
+										<div class="card__image">
+											<div
+												id="carouselExampleSlidesOnly"
+												class="carousel slide roun"
+												data-bs-ride="carousel"
+											>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./images/iron1.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./images/iron2.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./images/iron3.jpg"
+															class="d-block w-100 rounded-top"
+															alt="kino"
+															width="315"
+															height="180"
+														/>
+													</div>
+												</div>
+											</div>
+											<div class="card__body p-3">
+												<h4 class="mb-3">The Avengers</h4>
+												<span class="d-flex align-items-center mb-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="currentColor"
+														class="bi bi-calendar-fill me-3"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"
+														/>
+													</svg>
+
+													2012
+												</span>
+
+												<span class="d-flex align-items-center">
+													<img
+														class="star me-3"
+														src="./images/star.png"
+														alt="star"
+														width="18"
+														height="18"
+													/>
+													8.1
+												</span>
+
+												<div
+													class="buttons mt-3 mb-2 d-flex align-items-center justify-content-evenly"
+												>
+													<button type="button" class="btn btn-outline-primary">
+														Watch trailer
+													</button>
+													<button
+														type="button"
+														class="btn btn-outline-info"
+														data-bs-toggle="modal"
+														data-bs-target="#exampleModaltwo"
+													>
+														More info
+													</button>
+													<button type="button" class="btn btn-outline-success">
+														Bookmark
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<nav class="mt-5 pt-3 d-flex justify-content-center">
+								<ul class="pagination">
+									<li class="page-item active" aria-current="page">
+										<span class="page-link">1</span>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- modal -->
+		<div class="modal" tabindex="-1" id="exampleModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Avengers: Infinity War</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p>
+							Avengers: Infinity War is a 2018 American superhero film based on
+							the Marvel Comics superhero team the Avengers. Produced by Marvel
+							Studios and distributed by Walt Disney Studios Motion Pictures, it
+							is the sequel to The Avengers (2012) and Avengers: Age of Ultron
+							(2015), and the 19th film in the Marvel Cinematic Universe (MCU).
+							Directed by Anthony and Joe Russo and written by Christopher
+							Markus and Stephen McFeely, the film features an ensemble cast
+							including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris
+							Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom
+							Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony
+							Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave
+							Bautista, Zoe Saldaña, Josh Brolin, and Chris Pratt. In the film,
+							the Avengers and the Guardians of the Galaxy attempt to prevent
+							Thanos from collecting the six all-powerful Infinity Stones as
+							part of his quest to kill half of all life in the universe. The
+							film was announced in October 2014 as Avengers: Infinity War –
+							Part 1. The Russo brothers came on board to direct in April 2015,
+							and a month later Markus and McFeely signed on to write the script
+							for the film, which draws inspiration from Jim Starlin's 1991
+							comic book The Infinity Gauntlet and Jonathan Hickman's 2013 comic
+							book Infinity. In 2016, Marvel shortened the title to Avengers:
+							Infinity War. Filming began in January 2017 at Pinewood Atlanta
+							Studios in Fayette County, Georgia, with a large cast consisting
+							mostly of actors reprising their roles from previous MCU films,
+							including Brolin as Thanos. The production lasted until July 2017,
+							shooting back-to-back with a direct sequel, Avengers: Endgame
+							(2019). Additional filming took place in Scotland, the Downtown
+							Atlanta area, and New York City. With an estimated budget of
+							$325–400 million, the film is one of the most expensive films ever
+							made. Avengers: Infinity War premiered in Los Angeles on April 23,
+							2018, and was released in the United States on April 27, as part
+							of Phase Three of the MCU. The film received praise for Brolin's
+							performance, visual effects, action sequences, and emotional
+							weight. The film was the fourth film and the first superhero film
+							to gross over $2 billion worldwide, breaking numerous box office
+							records, and becoming the highest-grossing film of 2018 and the
+							fourth-highest-grossing film of all time both worldwide and in the
+							United States and Canada. The film's visual effects were nominated
+							at the 91st Academy Awards, 24th Critics' Choice Awards, and 72nd
+							British Academy Film Awards. The sequel, Avengers: Endgame, was
+							released in April 2019.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal-two -->
+		<div class="modal" tabindex="-1" id="exampleModaltwo">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">The Avengers</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p>
+							Желе́зный челове́к (англ. Iron Man); настоящее имя — Э́нтони Э́двард
+							«То́ни» Старк (англ. Anthony Edward "Tony" Stark) — персонаж
+							изданий Marvel Comics и их адаптаций, созданный писателем Стэном
+							Ли, сценаристом Ларри Либером и художниками Доном Хекомruen и
+							Джеком Кёрби; первое появление Железного человека состоялось в
+							комиксе Tales of Suspense #39 в марте 1963 года. В первоначальном
+							варианте своей биографии Тони Старк, гениальный изобретатель, муж
+							Верналии Лодж и богатейший промышленник с репутацией плейбоя,
+							страдает от ранения, полученного им в плену, где его вынудили
+							разработать для террористов оружие массового поражения. Вместо
+							этого он создаёт высокотехнологичный костюм-броню, с помощью
+							которого сбегает из плена. Позднее Старк улучшает свою броню
+							вооружением и устройствами, созданными на базе ресурсов его
+							компании, и использует доспех, чтобы защищать мир в облике
+							Железного человека, первое время скрывая свою личность.Перейти к
+							разделу «#Биография» Первоначально Железный человек, будучи
+							порождением Холодной войны и Вьетнамской войны, в частности, был
+							для Стэна Ли средством раскрытия их соответствующих тем и роли
+							американской экономики в борьбе с коммунизмом; со временем в
+							последующих переосмыслениях образа упор стал делаться на проблемы
+							корпоративного криминала и терроризма.Перейти к разделу «#История
+							публикаций» На протяжении времени публикаций Железный человек
+							связан в первую очередь с командой Мстителей, будучи одним из её
+							сооснователей, и нескольких побочных от неё команд супергероев;
+							его сольная серия, запущенная в мае 1968 года, пережила 5 томов,
+							издаваясь с перерывом в 2008—2012 годах, когда её сменила серия
+							The Invincible Iron Man, вплоть до 2014 года. Впоследствии, с
+							ростом популярности, Железный человек стал персонажем нескольких
+							мультсериалов и мультфильмов, причём как сольных, так и в составе
+							Мстителей. В фильмах, относящихся к кинематографической вселенной
+							Marvel, его роль играет актёр Роберт Дауни-младший.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
